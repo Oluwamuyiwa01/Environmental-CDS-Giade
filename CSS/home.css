@@ -1,0 +1,195 @@
+:root{
+    --green-dark: #173404;
+    --green-deep:#27500A;
+    --green-main:#3B6D11;
+    --green-mid: #639922;
+    --green-light: #97C459;
+    --green-pale: #C0DD97;
+    --green-bg: #EAF3DE;
+    --teal-bg:#E1F5EE;
+    --teal-text: #0F6E56;
+    --amber-bg: #FAEEDA;
+    --amber-text: #854f0B;
+    --text-primary: #1F2A12;
+    --text-secondary: #5B6650;
+    --text-tertiary: #8A937E;
+    --border-light: #E3E8DA;
+    --border-mid: #D3DBC6;
+    --bg-card: #FFFFFF;
+    --bg-soft: #F5F8EF;
+}
+
+/* HERO */
+.hero{
+    background:linear-gradient(rgba(200,225,200,0.5), rgba(200, 225, 200, 0.7)), url('../IMAGES/photo-1421789665209-c9b2a435e3dc.jpeg');
+     /* background: url("../IMAGES/premium_photo-1780596641724-d9a31b75162d.jpeg"); */
+    text-align: center; 
+    padding:8rem 2rem 5rem 2rem;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+}
+.hero-badge{
+    display:inline flex;
+    align-items: center;
+    padding:0.35rem 0.8rem;
+    font-size:0.8rem;
+    border: 1px solid var(--green-light);
+    border-radius:22px;
+    background:var(--bg-card);
+    margin-bottom:1.1rem
+}
+.hero h1{
+    font-size: 2rem;
+    margin-bottom:0.8rem;
+    font-weight:700;
+    line-height: 1.3;
+
+}
+.hero p{
+    font-size:1rem;
+    color: var(--green-main);
+    max-width:530px;
+    margin:0 auto 24px;
+    line-height:1.6;
+}
+.hero-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.hero-button button{
+    padding:0.9rem 1.4rem;
+    border: none;
+    border-radius:6px;
+    font-weight:600;
+    cursor: pointer;
+    transition: background 0.4s ;
+    font-size: 0.9rem;
+}
+
+.project-button{
+    background: var(--green-main);
+    color: var(--green-bg);
+}
+.project-button:hover{
+    background: var(--green-deep);
+}
+
+.hero-button .hero-join-button{
+    border: 1.5px solid var(--green-mid);
+    color:var(--green-main);
+    background: transparent;
+}
+
+.hero-join-button:hover{
+    background: var(--green-bg);
+}
+
+/* STATISTICS CARD */
+
+.stat-row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 14px;
+    justify-content: center;
+    align-items: center;
+    padding:1.5rem 1.4rem;
+    margin:0 2rem;
+}
+
+.stat-card{
+    background: var(--bg-card);
+    text-align: center;
+    padding:2rem 2.5rem;
+    border-radius:10px;
+    border: 1px solid var(--border-light);
+}
+.stat-num, .plus-sign{
+    font-size:1.8rem;
+    font-weight: bolder;
+    color:var(--green-main);
+}
+.stat-label{
+   font-size:0.9rem;
+   color:var(--text-secondary);
+   margin-top:4px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Activity Card */
+.activity{
+    padding:1.4rem 1.5rem;
+    margin: 0 2rem;
+}
+.activity-heading{
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.activity-heading h2{
+    font-size:1.3rem;
+    font-weight:700;
+}
+.activity-heading p{
+    font-size: 0.9rem;
+    color:var(--text-secondary);
+}
+
+
+.activity-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    
+}
+.activity-card{
+    /* box-shadow:0 0 1px rgba(0, 0, 0, 0.5); */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:3px;
+    background: var(--bg-card);
+    padding: 0.9rem 1rem;
+    text-align:center;
+    border-radius:10px;
+    border:1px solid var(--border-light);
+}
+.activity-icon{
+    font-size:30px;
+    background:var(--green-bg);
+    border-radius:10px;
+    width:50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.activity-card h3{
+    font-size:0.9rem;
+    /* font-weight: 600; */
+}
+.activity-card p{
+    line-height: 1.55;
+    font-size:0.9rem;
+}
+
+@media  (max-width:500px){
+    .stat-row,
+    .activity{
+        margin: 0;
+    }
+}

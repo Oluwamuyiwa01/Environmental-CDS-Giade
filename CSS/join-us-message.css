@@ -1,0 +1,43 @@
+:root{
+    --green-dark: #173404;
+    --green-deep:#27500A;
+    --green-main:#3B6D11;
+    --green-mid: #639922;
+    --green-light: #97C459;
+    --green-pale: #C0DD97;
+    --green-bg: #EAF3DE;
+    --teal-bg:#E1F5EE;
+    --teal-text: #0F6E56;
+    --amber-bg: #FAEEDA;
+    --amber-text: #854f0B;
+    --text-primary: #1F2A12;
+    --text-secondary: #5B6650;
+    --text-tertiary: #8A937E;
+    --border-light: #E3E8DA;
+    --border-mid: #D3DBC6;
+    --bg-card: #FFFFFF;
+    --bg-soft: #F5F8EF;
+}
+
+.join-us-section{
+    max-width: 520px;
+    margin: 0 auto;
+    padding:1.8rem 1rem;
+}
+
+.message{
+    display: flex;
+    justify-content: center;
+    background:var(--green-bg);
+    padding:1rem 1.5rem;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid var(--green-light);
+    color: var(--green-main);
+}
+
+div i{
+    font-size:45px;
+    color:var(--green-mid);
+    margin:8px 0;
+}
