@@ -193,6 +193,8 @@
         margin: 0;
     }
     .hero{
-        padding-top: 5.5rem;
+        padding-top:6rem;
     }
-}
+    .hero-badge{
+         padding:0.3rem 0.3rem;
+    }
